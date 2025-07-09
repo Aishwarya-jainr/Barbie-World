@@ -1,0 +1,364 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style: circle;
+}
+body::-webkit-scrollbar {
+    display: none;             
+}
+.bg-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    position:fixed;
+    left:0;
+    /* right:0; */
+    top:0;
+    /* bottom:0; */
+    z-index:-1;
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+#about{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    color: rgb(242, 238, 238);
+    text-align: center;
+    gap:50px;
+    padding:30px 140px;
+}
+.head1{
+    font-size:32px;
+    margin-top:30px;
+}
+.head2{
+    font-size:25px;
+    margin-top:10px;
+}
+
+.head4{
+    margin-top:60px;
+    font-size:25px;
+}
+.cir{
+    
+    height: 2px ;
+    width: 2px;
+    background-color: #f29;
+    border-radius: 50%;
+}
+
+.circle{
+    list-style-type: circle;
+    text-align: left;
+    margin-left: 20%;
+    font-size:25px;
+    gap:10px;
+}
+
+
+#gallery{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    padding:100px 150px ;
+    position: relative;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.line > img{
+        /* padding: 140px; */
+    width: 100%;
+    
+}
+.line4{
+    display: flex;
+}
+.left{
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.bttn:hover{
+    color:antiquewhite;
+    background-color:rgb(187, 19, 109);
+}
+.left>img{
+    width:390px;
+}
+.bttn{
+    background-color:#f29; 
+    height: 100px; 
+    width: 180%;
+    margin-right: 40px; 
+    margin-left: -600px; 
+    border-radius: 40px; 
+    font-size: 3rem; 
+    color: white;
+}
+.right{
+ color: white;
+    background-color: #f29;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px;
+    position: absolute;
+    width: fit-content;
+    border-radius:30px;
+    padding-left:30px;
+    padding-right: 30px;
+   
+}
+
+nav {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+nav > button{
+    transition-duration: 2s;
+}
+nav > button:hover{
+    transform: rotateY(180deg);
+}
+
+nav > button > a {
+    text-decoration: none;
+    padding-right: 40px;
+    color: rgb(247, 119, 179);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 200ms ease;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:inherit;
+    border-width:20px;
+    border-color: aliceblue;
+}
+
+nav > button > a:hover {
+    text-decoration: underline;
+    scale: 1.2;
+}
+
+.div2 {
+    position:relative;
+}
+.div2>img{
+    width: 100%;
+}
+
+.welcome {
+    color: white;
+    background-color: #f29;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 14px;
+    position: absolute;
+    width: fit-content;
+    bottom: 150px;
+    left: 490px;
+    border: 5px solid white;
+    border-radius:20px;
+}
+.welcome:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all ease 1s;
+}
+#location{
+    background-color:#f29;
+    color:whitesmoke;
+    display:flex;
+    gap:50px;
+    text-align:center;
+     width: 100%;
+     position: relative;
+     padding: 30px 140px;
+}
+.loc1{
+    width: 50%;
+}
+.loc1>h1{
+    font-size:45px;
+    margin-top: 70px;
+}
+.loc1>p{
+    margin-top: 80px;;
+    font-size:40px;
+    text-align: center;
+    padding-left:30px;
+    padding-right:30px;
+    
+}
+
+.loc1>a>button{
+    margin-top: 100px;
+    color: #f29;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px;
+    /* position: absolute; */
+    width: fit-content;
+    border-radius:30px;
+    padding-left:30px;
+    padding-right: 30px;
+
+}
+.loc1>a>button:hover{
+    color:antiquewhite;
+    background-color:rgb(187, 19, 109);
+}
+#event{
+    color:#f29;
+    background-color: aliceblue;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align: center;
+    gap:50px;
+    padding:50px 140px;
+}
+#event>h1{
+    font-size:60px;
+    margin-top: 20px;
+}
+#event>a{
+    font-size:40px;
+    color:#f29
+}
+#event>p{
+    font-size:30px;
+    color:#f29
+}
+.btn{
+    color: white;
+    background-color:#f29;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px;
+    width: fit-content;
+    border-radius:30px;
+    padding-left:30px;
+    padding-right: 30px;
+    margin-left: 40px;
+}
+#event>a>.btn:hover{
+    color:#f29;
+    background-color:white;
+    cursor: pointer;
+
+    transform: scale(1.2);
+    transition: all ease 1s;
+
+}
+#contact{
+    color:#f29;
+    background-color: white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    color: #f29;
+    text-align: center;
+    padding-left: 50px;
+    padding:70px 140px;
+    /* gap:50px; */
+}
+#contact>p{
+    font-size:30px;
+    padding: -1px 270px;
+    font-weight:bold;
+}
+#contact>h1{
+    font-size:70px;
+    margin-top:40px;
+}
+#contact>h2{
+    margin-top:30px;
+}
+#contact>input{
+    background-color: rgb(250, 175, 215);
+    height:50px;
+    width:40%;
+    margin-left: 330px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+#contact>textarea{
+    background-color: rgb(250, 175, 215);
+    height:100px;
+    width:40%;
+    margin-left: 330px;
+    text-align: center;
+    border-radius: 10px;
+    border-color:black;
+    border-bottom:black;
+    border-width:2px;
+
+}
+#contact>button{
+    height: 45px;
+    width: 120px;
+    background-color: #f29;
+    color: white;
+    font-weight:bold;
+    font-size:15px;
+    margin-left: 500px;
+    margin-top: -15px;
+    border-radius:10px;
+    /* border: px solid white; */
+    border-width: 30px;
+   }
+#contact>button:hover{
+    background-color:rgb(167, 58, 167);
+}
+.line>img:hover{
+    cursor: pointer;
+
+    transform: scale(1.3);
+    transition: all ease 1s;
+
+}
+.left>img:hover{
+    cursor: pointer;
+
+    transform: scale(1.3);
+    transition: all ease 1s;
+
+}
+/* #contact>button{
+    background-color: #f29;
+    height:50px;
+    width:40%;
+    border-radius: 20px;
+
+} */
+
+
+ 
